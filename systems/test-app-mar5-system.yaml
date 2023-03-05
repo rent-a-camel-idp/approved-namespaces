@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test-app-mar5
+  description: this is a test
+  labels:
+    size: small
+    environments: build-dev-qa-prod
+spec:
+  owner: rms
