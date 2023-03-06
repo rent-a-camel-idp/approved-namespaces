@@ -1,0 +1,56 @@
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bank-build
+  labels:
+    app : bank
+    team: rms
+    build-namespace: bank-build
+    size: small
+    environment: build
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: bank-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bank-dev
+  labels:
+    app : bank
+    team: rms
+    build-namespace: bank-build
+    size: small
+    environment: dev
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: bank-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bank-qa
+  labels:
+    app : bank
+    team: rms
+    build-namespace: bank-build
+    size: small
+    environment: qa
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: bank-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bank-prod
+  labels:
+    app : bank
+    team: rms
+    build-namespace: bank-build
+    size: small
+    environment: prod
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: bank-build
